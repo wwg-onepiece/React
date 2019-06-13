@@ -10,7 +10,7 @@ class App extends Component {
         },
         {
           brand: 'LOL',
-          data: ['EZ', '洛', '女警', '凯南']
+          data: ['EZ', '劫', '女警', '凯南']
         }
       ]
     }
