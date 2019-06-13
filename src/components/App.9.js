@@ -6,11 +6,19 @@ class App extends Component {
       list: [
         {
           brand: 'yys',
+<<<<<<< HEAD
           data: ['大天狗', '茨木童子', '彼岸花', '花鸟卷']
         },
         {
           brand: 'LOL',
           data: ['EZ', '劫', '女警', '凯南']
+=======
+          data: ['大天狗', '茨木童子', '彼岸花']
+        },
+        {
+          brand: 'LOL',
+          data: ['EZ', '凯南']
+>>>>>>> eb5d7e1ffb703eb11deb307ce1d0ee1bf1312eb0
         }
       ]
     }
