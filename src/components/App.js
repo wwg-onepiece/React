@@ -2,21 +2,21 @@ import React,{ Component } from 'react';
 class App extends Component {
   constructor (props) {
     super(props);
+    this.changeData = this.changeData.bind(this)
     this.state = {
       msg: 'hello world'
     }
   }
   changeData () {
     this.setState({
-      flag: true,
-      msg: this.flag? 'hello msg' : 'hello',
+      msg: 'hello msg'
     })
   }
   render () {
     return (
       <div>
         { this.state.msg }
-        <button onClick = { this.changeData.bind(this) }>修改</button>
+        <button onClick = { this.changeData }>修改</button>
       </div>
     )
   }
