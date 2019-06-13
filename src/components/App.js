@@ -1,4 +1,6 @@
+// 给组件添加样式 区别： class变为className
 import React,{ Component } from 'react';
+import '@/main.scss';
 class App extends Component {
   constructor (props) {
     super(props);
@@ -9,17 +11,25 @@ class App extends Component {
   componentDidMount () {
     fetch('http://www.daxunxun.com/douban').then(res => res.json()).then(data => {
       console.log(data)
-      this.setState({
+      this.setState ({
         list: data
       })
     })
   }
   render () {
     return (
-      <ul>
+      <ul className='list'>
         {
           this.state.list.map(item => {
-            return (<li key = { item.id}>{ item.title }</li>)
+            return (<li key = { item.id } style={
+              {
+                width: '100%',
+                height: '30px',
+                lineheight: '30px',
+                borderBottom: '1px solid #ccc'
+                // 驼峰式命名
+              }
+            }>{ item.title }</li>)
           })
         }
       </ul>
