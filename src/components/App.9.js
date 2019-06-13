@@ -6,7 +6,7 @@ class App extends Component {
       list: [
         {
           brand: 'yys',
-          data: ['大天狗', '茨木童子', '彼岸花', '花鸟卷']
+          data: ['大天狗', '茨木童子', '彼岸花', '花鸟卷', '黑童子']
         },
         {
           brand: 'LOL',
