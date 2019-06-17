@@ -2,10 +2,12 @@
 
 html, body, #root, .container {
   @include rect(100%, 100%);
+  touch-action:none;
 }
 .container {
   @include flexbox();
   @include flex-direction(column);
+  @include overflow();
   .box {
     @include flex();
     @include flexbox();
