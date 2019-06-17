@@ -1,4 +1,4 @@
-// 编程式跳转
+// 声明式跳转
 import React from 'react';
 import Prolist from '@/components/common/Prolist';
 
@@ -18,13 +18,11 @@ class Com extends React.Component {
   }
   render () {
     return (
-      <div className = "container">
-        <div className = "box">
-          <header className = "header">首页头部</header>
-          <div className = "content">
-            首页内容
-            <Prolist prolist = { this.state.prolist } { ...this.props }/>
-          </div>
+      <div className = "box">
+        <header className = "header">首页头部</header>
+        <div className = "content">
+          首页内容
+          <Prolist prolist = { this.state.prolist }/>
         </div>
       </div>
     )
