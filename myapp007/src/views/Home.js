@@ -2,7 +2,6 @@
 import React from 'react';
 import Prolist from '@/components/common/Prolist';
 import Banner from '@/components/common/Banner'
-
 class Com extends React.Component {
   constructor (props) {
     super(props);
