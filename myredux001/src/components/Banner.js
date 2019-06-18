@@ -1,18 +1,13 @@
-    //   bannerlist.map((item, index) => {
-    //     return (<img key = { index } src={ 'http://www.daxunxun.com' + item}/> )
-    //   })
 import React from 'react';
-import store from '@/store';
+
 const Com = ({ bannerlist }) => (
-  <div>
+  <ul>
     {
-      // store.getState().bannerlist.map((item, index) => {
-      //   return (<img key = { index } src = { 'http://www.daxunxun.com' + item}/>)
-      // })
       bannerlist.map((item, index) => {
-        return (<img key = { index} src = { 'http://www.daxunxun.com' + item}/>)
+        return (<li key = { index }>{ item }</li>)
       })
     }
-  </div>
+  </ul>
 )
+
 export default Com;
