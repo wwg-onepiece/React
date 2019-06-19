@@ -1,12 +1,11 @@
-import { connect } from 'react-redux';
+import { connect } from './node_modules/react-redux';
 import UI from './UI';
-import api from '@/api';
+import api from './node_modules/@/api';
 
 const mapStateToProps = (state) => {
-  console.log(state)
   return {
-    bannerlist: state.home.bannerlist,
-    prolist: state.home.prolist
+    bannerlist: state.bannerlist,
+    prolist: state.prolist
   }
 }
 

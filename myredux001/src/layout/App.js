@@ -1,11 +1,7 @@
 import React from 'react';
-import Home from '@/views/Home';
-
+import Home from '@/views/home';
 const Com = () => (
-  <div>
-    11111
-    <Home />
-  </div>
+  <Home />
 )
 
 export default Com;

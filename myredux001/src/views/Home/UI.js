@@ -1,20 +1,23 @@
-import React from 'react';
-import Banner from '@/components/Banner';
-class Com extends React.Component {
+import React, { Component } from 'react';
+
+class Com extends Component {
   componentDidMount () {
-    console.log(this.props)
-    this.props.getBannerList()
-    this.props.getProList()
+    this.props.getBannerListData();
+    this.props.getProListData();
   }
   render () {
-    console.log(this.props)
     return (
-      <div>首页
-        <Banner bannerlist = { this.props.bannerlist }/>
+      <div>
+        首页
         {
-          this.props.prolist.map((item, index) => {
-            return (<li key = { index }>{ item.title }</li>)
-          })
+          this.props.bannerlist.map((item, index) => (
+            <li key = { index }>{ item }</li>
+          ))
+        }
+        {
+          this.props.prolist.map((item, index) => (
+            <li key = { index }>{ item.title }</li>
+          ))
         }
       </div>
     )
